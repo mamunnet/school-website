@@ -21,8 +21,8 @@ A professional website for a UI/UX design school built with Python Flask and mod
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd uiux-school
+git clone https://github.com/mamunnet/school-website.git
+cd school-website
 ```
 
 2. Create a virtual environment and activate it:
@@ -59,7 +59,7 @@ http://localhost:5000
 ## Project Structure
 
 ```
-uiux-school/
+school-website/
 ├── app.py              # Main application file
 ├── requirements.txt    # Python dependencies
 ├── static/            # Static files (CSS, JS, images)
