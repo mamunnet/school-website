@@ -1,0 +1,214 @@
+{% extends "base.html" %}
+
+{% block title %}Admission{% endblock %}
+
+{% block content %}
+<section class="admission-header py-5 bg-light">
+    <div class="container text-center">
+        <h1 class="mb-3">Join Our UI/UX School</h1>
+        <p class="lead mb-5">Take the first step towards your career in UI/UX design</p>
+    </div>
+</section>
+
+<section class="admission-process py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-5">
+                        <h2 class="text-center mb-4">Application Form</h2>
+                        <form id="admissionForm" class="needs-validation" novalidate>
+                            <!-- Personal Information -->
+                            <h4 class="mb-4">Personal Information</h4>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your first name.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your last name.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email address.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your phone number.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Course Selection -->
+                            <h4 class="mt-5 mb-4">Course Selection</h4>
+                            <div class="mb-4">
+                                <label for="courseSelect" class="form-label">Select Course</label>
+                                <select class="form-select" id="courseSelect" required>
+                                    <option value="">Choose a course...</option>
+                                    <option value="ui-fundamentals">UI Design Fundamentals ($599)</option>
+                                    <option value="ux-process">UX Design Process ($799)</option>
+                                    <option value="ux-research">UX Research Methods ($499)</option>
+                                    <option value="design-tools">Design Tools Mastery ($399)</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a course.
+                                </div>
+                            </div>
+
+                            <!-- Background Information -->
+                            <h4 class="mt-5 mb-4">Background Information</h4>
+                            <div class="mb-4">
+                                <label for="education" class="form-label">Educational Background</label>
+                                <textarea class="form-control" id="education" rows="3" required></textarea>
+                                <div class="invalid-feedback">
+                                    Please provide your educational background.
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="experience" class="form-label">Design Experience (if any)</label>
+                                <textarea class="form-control" id="experience" rows="3"></textarea>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="portfolio" class="form-label">Portfolio URL (optional)</label>
+                                <input type="url" class="form-control" id="portfolio">
+                            </div>
+
+                            <!-- Why Join -->
+                            <div class="mb-4">
+                                <label for="motivation" class="form-label">Why do you want to join this course?</label>
+                                <textarea class="form-control" id="motivation" rows="4" required></textarea>
+                                <div class="invalid-feedback">
+                                    Please tell us why you want to join.
+                                </div>
+                            </div>
+
+                            <!-- Terms and Conditions -->
+                            <div class="mb-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="terms" required>
+                                    <label class="form-check-label" for="terms">
+                                        I agree to the <a href="#">terms and conditions</a>
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        You must agree to the terms and conditions.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg w-100">Submit Application</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="admission-info py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Admission Process</h2>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="process-card text-center">
+                    <div class="process-icon mb-3">
+                        <i class="fas fa-file-alt fa-3x text-primary"></i>
+                    </div>
+                    <h4>1. Apply Online</h4>
+                    <p>Fill out the application form with your details and background</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="process-card text-center">
+                    <div class="process-icon mb-3">
+                        <i class="fas fa-comments fa-3x text-primary"></i>
+                    </div>
+                    <h4>2. Interview</h4>
+                    <p>Schedule a brief interview with our admissions team</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="process-card text-center">
+                    <div class="process-icon mb-3">
+                        <i class="fas fa-check-circle fa-3x text-primary"></i>
+                    </div>
+                    <h4>3. Decision</h4>
+                    <p>Receive admission decision within 5 business days</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="process-card text-center">
+                    <div class="process-icon mb-3">
+                        <i class="fas fa-graduation-cap fa-3x text-primary"></i>
+                    </div>
+                    <h4>4. Enroll</h4>
+                    <p>Complete enrollment and begin your journey</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faq py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                What are the prerequisites for joining?
+                            </button>
+                        </h3>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                No prior design experience is required for our beginner courses. However, you should have basic computer skills and a passion for design.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                What is the course duration?
+                            </button>
+                        </h3>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Course duration varies from 4 to 10 weeks, depending on the program you choose. Each course has a different schedule to accommodate various learning paces.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Are there payment plans available?
+                            </button>
+                        </h3>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, we offer flexible payment plans and financing options. Contact our admissions team for more details about payment arrangements.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

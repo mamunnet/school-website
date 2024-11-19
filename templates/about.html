@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<section class="about-header py-5 bg-light">
+    <div class="container text-center">
+        <h1 class="mb-3">About UI/UX School</h1>
+        <p class="lead mb-5">Empowering the next generation of UI/UX designers through quality education and practical experience</p>
+    </div>
+</section>
+
+<section class="our-story py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="mb-4">Our Story</h2>
+                <p class="mb-4">Founded in 2020, UI/UX School emerged from a vision to bridge the gap between traditional design education and the rapidly evolving digital industry. Our founders, experienced designers and educators, recognized the need for practical, industry-focused training in UI/UX design.</p>
+                <p>Today, we've helped hundreds of students transform their careers and become successful UI/UX designers. Our commitment to excellence and practical learning has made us one of the leading design education institutions.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/about-story.jpg') }}" alt="Our Story" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="our-values py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Values</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-star fa-3x text-primary mb-3"></i>
+                        <h4>Excellence</h4>
+                        <p>We strive for excellence in everything we do, from curriculum development to student support.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-hands-helping fa-3x text-primary mb-3"></i>
+                        <h4>Practical Learning</h4>
+                        <p>Our hands-on approach ensures students gain real-world experience and practical skills.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                        <h4>Community</h4>
+                        <p>We foster a supportive community where students can learn, grow, and network together.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="achievements py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Achievements</h2>
+        <div class="row text-center">
+            <div class="col-md-3 mb-4">
+                <div class="achievement-item">
+                    <h3 class="display-4 fw-bold text-primary">500+</h3>
+                    <p>Graduates</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="achievement-item">
+                    <h3 class="display-4 fw-bold text-primary">95%</h3>
+                    <p>Employment Rate</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="achievement-item">
+                    <h3 class="display-4 fw-bold text-primary">50+</h3>
+                    <p>Industry Partners</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="achievement-item">
+                    <h3 class="display-4 fw-bold text-primary">20+</h3>
+                    <p>Expert Instructors</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="team py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Leadership Team</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/team1.jpg') }}" class="card-img-top" alt="CEO">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">John Smith</h5>
+                        <p class="text-primary mb-2">CEO & Founder</p>
+                        <p class="card-text">Former Design Director at Apple with 15+ years of industry experience.</p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="text-primary me-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-primary"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/team2.jpg') }}" class="card-img-top" alt="Academic Director">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sarah Williams</h5>
+                        <p class="text-primary mb-2">Academic Director</p>
+                        <p class="card-text">PhD in Design Education with extensive experience in curriculum development.</p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="text-primary me-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-primary"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/team3.jpg') }}" class="card-img-top" alt="Head of Industry Relations">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Michael Brown</h5>
+                        <p class="text-primary mb-2">Head of Industry Relations</p>
+                        <p class="card-text">20+ years of experience in building industry partnerships and placement programs.</p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="text-primary me-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-primary"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="partners py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Industry Partners</h2>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-2 col-6 mb-4">
+                <img src="{{ url_for('static', filename='images/partner1.png') }}" alt="Partner 1" class="img-fluid">
+            </div>
+            <div class="col-md-2 col-6 mb-4">
+                <img src="{{ url_for('static', filename='images/partner2.png') }}" alt="Partner 2" class="img-fluid">
+            </div>
+            <div class="col-md-2 col-6 mb-4">
+                <img src="{{ url_for('static', filename='images/partner3.png') }}" alt="Partner 3" class="img-fluid">
+            </div>
+            <div class="col-md-2 col-6 mb-4">
+                <img src="{{ url_for('static', filename='images/partner4.png') }}" alt="Partner 4" class="img-fluid">
+            </div>
+            <div class="col-md-2 col-6 mb-4">
+                <img src="{{ url_for('static', filename='images/partner5.png') }}" alt="Partner 5" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

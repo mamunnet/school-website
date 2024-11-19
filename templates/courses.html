@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+{% block title %}Our Courses{% endblock %}
+
+{% block content %}
+<section class="courses-header py-5 bg-light">
+    <div class="container">
+        <h1 class="text-center mb-5">Our Courses</h1>
+        
+        <!-- Course Filter -->
+        <div class="row mb-4">
+            <div class="col-md-6 mx-auto">
+                <select id="courseFilter" class="form-select">
+                    <option value="all">All Courses</option>
+                    <option value="ui">UI Design</option>
+                    <option value="ux">UX Design</option>
+                    <option value="research">UX Research</option>
+                    <option value="tools">Design Tools</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- Course Grid -->
+        <div class="row g-4">
+            <!-- UI Design Course -->
+            <div class="col-md-6 col-lg-4 course-card" data-category="ui">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename='images/course1.jpg') }}" class="card-img-top" alt="UI Design Fundamentals">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">UI Design</span>
+                        <h5 class="card-title">UI Design Fundamentals</h5>
+                        <p class="card-text">Learn the core principles of user interface design and create beautiful, intuitive interfaces.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-clock text-primary me-2"></i>8 weeks</li>
+                            <li><i class="fas fa-user-graduate text-primary me-2"></i>Beginner Friendly</li>
+                            <li><i class="fas fa-certificate text-primary me-2"></i>Certificate Included</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="h5 mb-0">$599</span>
+                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- UX Design Course -->
+            <div class="col-md-6 col-lg-4 course-card" data-category="ux">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename='images/course2.jpg') }}" class="card-img-top" alt="UX Design Process">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">UX Design</span>
+                        <h5 class="card-title">UX Design Process</h5>
+                        <p class="card-text">Master the end-to-end UX design process from research to final implementation.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-clock text-primary me-2"></i>10 weeks</li>
+                            <li><i class="fas fa-user-graduate text-primary me-2"></i>Intermediate</li>
+                            <li><i class="fas fa-certificate text-primary me-2"></i>Certificate Included</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="h5 mb-0">$799</span>
+                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- UX Research Course -->
+            <div class="col-md-6 col-lg-4 course-card" data-category="research">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename='images/course3.jpg') }}" class="card-img-top" alt="UX Research Methods">
+                    <div class="card-body">
+                        <span class="badge bg-info mb-2">UX Research</span>
+                        <h5 class="card-title">UX Research Methods</h5>
+                        <p class="card-text">Learn various UX research methods and how to apply them effectively in your projects.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-clock text-primary me-2"></i>6 weeks</li>
+                            <li><i class="fas fa-user-graduate text-primary me-2"></i>All Levels</li>
+                            <li><i class="fas fa-certificate text-primary me-2"></i>Certificate Included</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="h5 mb-0">$499</span>
+                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Design Tools Course -->
+            <div class="col-md-6 col-lg-4 course-card" data-category="tools">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename='images/course4.jpg') }}" class="card-img-top" alt="Design Tools Mastery">
+                    <div class="card-body">
+                        <span class="badge bg-warning mb-2">Design Tools</span>
+                        <h5 class="card-title">Design Tools Mastery</h5>
+                        <p class="card-text">Master industry-standard design tools like Figma, Sketch, and Adobe XD.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-clock text-primary me-2"></i>4 weeks</li>
+                            <li><i class="fas fa-user-graduate text-primary me-2"></i>Beginner Friendly</li>
+                            <li><i class="fas fa-certificate text-primary me-2"></i>Certificate Included</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="h5 mb-0">$399</span>
+                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Course Benefits -->
+<section class="course-benefits py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Why Choose Our Courses?</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-laptop-code fa-3x text-primary mb-3"></i>
+                        <h4>Practical Projects</h4>
+                        <p>Work on real-world projects and build a professional portfolio.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                        <h4>Expert Mentorship</h4>
+                        <p>Get guidance from industry professionals with years of experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-certificate fa-3x text-primary mb-3"></i>
+                        <h4>Industry Recognition</h4>
+                        <p>Earn certificates recognized by top companies worldwide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section py-5 bg-primary text-white">
+    <div class="container text-center">
+        <h2 class="mb-4">Ready to Start Your Design Journey?</h2>
+        <p class="lead mb-4">Join thousands of students who have transformed their careers with our courses.</p>
+        <a href="{{ url_for('admission') }}" class="btn btn-light btn-lg">Apply Now</a>
+    </div>
+</section>
+{% endblock %}

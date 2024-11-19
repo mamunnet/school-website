@@ -1,0 +1,265 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <h1 class="mb-4">Welcome to SGN Academy</h1>
+                <p class="lead mb-4">Empowering students with quality education and practical skills for a better future. Join us in our journey of excellence in education.</p>
+                <div class="d-flex gap-3 mb-5">
+                    <a href="{{ url_for('courses') }}" class="btn btn-primary">Explore Courses</a>
+                    <a href="{{ url_for('admission') }}" class="btn btn-outline-light">Apply Now</a>
+                </div>
+                <div class="row g-4">
+                    <div class="col-6 col-md-4">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-user-graduate fs-3 me-3 text-primary"></i>
+                            <div>
+                                <h4 class="mb-0">2000+</h4>
+                                <p class="mb-0">Students</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-chalkboard-teacher fs-3 me-3 text-primary"></i>
+                            <div>
+                                <h4 class="mb-0">50+</h4>
+                                <p class="mb-0">Teachers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left">
+                <img src="{{ url_for('static', filename='images/hero.jpg') }}" alt="Students" class="img-fluid rounded-4 shadow-lg">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="section-padding">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <p class="section-subtitle">Discover what makes SGN Academy the perfect choice for your education</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4 text-center">
+                        <div class="feature-icon mb-4">
+                            <i class="fas fa-graduation-cap fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="mb-3">Quality Education</h4>
+                        <p class="text-muted mb-0">We provide high-quality education with modern teaching methods and experienced faculty.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4 text-center">
+                        <div class="feature-icon mb-4">
+                            <i class="fas fa-users fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="mb-3">Expert Teachers</h4>
+                        <p class="text-muted mb-0">Learn from industry professionals with years of teaching and practical experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4 text-center">
+                        <div class="feature-icon mb-4">
+                            <i class="fas fa-book fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="mb-3">Modern Facilities</h4>
+                        <p class="text-muted mb-0">Access to state-of-the-art facilities and resources for enhanced learning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Counter Section -->
+<section class="counter-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-3 col-6" data-aos="fade-up">
+                <div class="counter-box">
+                    <i class="fas fa-user-graduate"></i>
+                    <h3>2000+</h3>
+                    <p>Students</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="counter-box">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>50+</h3>
+                    <p>Teachers</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="counter-box">
+                    <i class="fas fa-book-open"></i>
+                    <h3>100+</h3>
+                    <p>Courses</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="counter-box">
+                    <i class="fas fa-trophy"></i>
+                    <h3>50+</h3>
+                    <p>Awards</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Popular Courses -->
+<section class="section-padding">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">Popular Courses</h2>
+            <p class="section-subtitle">Explore our most popular courses and start your journey today</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card course-card">
+                    <img src="{{ url_for('static', filename='images/course1.jpg') }}" alt="Course">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-primary">Popular</span>
+                            <span class="text-primary fw-bold">$299</span>
+                        </div>
+                        <h5 class="card-title mb-3">Web Development</h5>
+                        <p class="card-text text-muted">Learn modern web development with practical projects and industry best practices.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-clock text-muted me-2"></i>
+                                <span class="text-muted">3 Months</span>
+                            </div>
+                            <a href="{{ url_for('courses') }}" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="card course-card">
+                    <img src="{{ url_for('static', filename='images/course2.jpg') }}" alt="Course">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-primary">Trending</span>
+                            <span class="text-primary fw-bold">$399</span>
+                        </div>
+                        <h5 class="card-title mb-3">Digital Marketing</h5>
+                        <p class="card-text text-muted">Master digital marketing strategies and tools for business growth.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-clock text-muted me-2"></i>
+                                <span class="text-muted">4 Months</span>
+                            </div>
+                            <a href="{{ url_for('courses') }}" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="card course-card">
+                    <img src="{{ url_for('static', filename='images/course3.jpg') }}" alt="Course">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-primary">New</span>
+                            <span class="text-primary fw-bold">$499</span>
+                        </div>
+                        <h5 class="card-title mb-3">Data Science</h5>
+                        <p class="card-text text-muted">Learn data analysis, machine learning, and statistical methods.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-clock text-muted me-2"></i>
+                                <span class="text-muted">6 Months</span>
+                            </div>
+                            <a href="{{ url_for('courses') }}" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="{{ url_for('courses') }}" class="btn btn-outline-primary btn-lg">View All Courses</a>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonial Section -->
+<section class="section-padding bg-light">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">What Our Students Say</h2>
+            <p class="section-subtitle">Hear from our students about their learning experience</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card testimonial-card h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img src="{{ url_for('static', filename='images/testimonial1.jpg') }}" alt="Student" class="rounded-circle me-3" width="60">
+                            <div>
+                                <h5 class="mb-1">John Doe</h5>
+                                <p class="text-muted mb-0">Web Development Student</p>
+                            </div>
+                        </div>
+                        <p class="mb-0">"The quality of education and support from teachers at SGN Academy is exceptional. I've learned so much in such a short time."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card testimonial-card h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img src="{{ url_for('static', filename='images/testimonial2.jpg') }}" alt="Student" class="rounded-circle me-3" width="60">
+                            <div>
+                                <h5 class="mb-1">Jane Smith</h5>
+                                <p class="text-muted mb-0">Digital Marketing Student</p>
+                            </div>
+                        </div>
+                        <p class="mb-0">"The practical approach to learning and industry-focused curriculum helped me land my dream job. Highly recommended!"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card testimonial-card h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img src="{{ url_for('static', filename='images/testimonial3.jpg') }}" alt="Student" class="rounded-circle me-3" width="60">
+                            <div>
+                                <h5 class="mb-1">Mike Johnson</h5>
+                                <p class="text-muted mb-0">Data Science Student</p>
+                            </div>
+                        </div>
+                        <p class="mb-0">"The faculty is amazing and always ready to help. The hands-on projects really helped me understand complex concepts."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section-padding bg-primary text-white">
+    <div class="container text-center">
+        <div data-aos="fade-up">
+            <h2 class="mb-4">Ready to Start Your Journey?</h2>
+            <p class="lead mb-4">Join SGN Academy today and take the first step towards your successful career</p>
+            <a href="{{ url_for('admission') }}" class="btn btn-light btn-lg">Apply Now</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
